@@ -1,13 +1,6 @@
-$uiWidth: 750;
-@function vm($px) {
-  @return ($px/$uiWidth) * 100vw;
-}
-
 .App {
-  width: vm(500);
-  font-size: vm(16);
-  margin: 0 auto;
-  padding: vm(20) 0;
-  display: flex;
-  border: 1px solid #cecece;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
