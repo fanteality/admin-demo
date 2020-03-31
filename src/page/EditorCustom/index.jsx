@@ -4,6 +4,7 @@ import BreadcrumCustom from '../../components/BreadcrumbCustom';
 import { EditorState, convertToRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import draftToHtml from 'draftjs-to-html';
+import draftToMarkdown from 'draftjs-to-markdown';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import './index.scss';
 export default class EditorCustom extends React.Component {
@@ -28,10 +29,10 @@ export default class EditorCustom extends React.Component {
                         <TransferPanel title='转换为HTML' value={draftToHtml(convertToRaw(editorState.getCurrentContent()))}/>
                     </Col>
                     <Col md={8}>
-                        <TransferPanel title='转换为HTML' value={draftToHtml(convertToRaw(editorState.getCurrentContent()))}/>
+                        <TransferPanel title='转换为Markdown' value={draftToMarkdown(convertToRaw(editorState.getCurrentContent()))}/>
                     </Col>
                     <Col md={8}>
-                        <TransferPanel title='转换为HTML' value={draftToHtml(convertToRaw(editorState.getCurrentContent()))}/>
+                        <TransferPanel title='转换为JSON' value={JSON.stringify(convertToRaw(editorState.getCurrentContent()))}/>
                     </Col>
                 </Row>
             </div>

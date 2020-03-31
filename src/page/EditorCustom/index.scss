@@ -1,11 +1,21 @@
 
 .admin-editor{
     &-transfer{
+        margin-top: 30px;
+        background-color: #fff;
+        p{
+            height: 50px;
+            font-weight: 700;
+            line-height: 50px;
+            text-align: center;
+            border-bottom: 2px solid #cecece;
+        }
         textarea{
             width: 100%;
             border: 0;
             outline: none;
             resize: none;
+            padding: 10px;
             background-color: #fff;
         }
     }
