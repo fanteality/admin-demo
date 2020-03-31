@@ -1,0 +1,18 @@
+
+.admin-editor{
+    &-transfer{
+        textarea{
+            width: 100%;
+            border: 0;
+            outline: none;
+            resize: none;
+            background-color: #fff;
+        }
+    }
+}
+// 富文本编辑器样式
+.demo-editor{
+    min-height: 350px;
+    padding: 0 10px;
+    background-color: #fff;
+}
