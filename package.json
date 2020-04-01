@@ -2,7 +2,7 @@
   "name": "admin-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fanteality.github.io/admin-demo",
+  "homepage": "https://fanteality.github.io",
   "dependencies": {
     "@ant-design/icons": "^4.0.3",
     "@ant-design/icons-react": "^2.0.1",
